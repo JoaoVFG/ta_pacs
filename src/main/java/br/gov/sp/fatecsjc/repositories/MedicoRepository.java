@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.gov.sp.fatecsjc.domain.Medico;
 
 @Repository
-public interface MedicoRepository extends JpaRepository<Medico, Int>{
+public interface MedicoRepository extends JpaRepository<Medico, Integer>{
 
 }
