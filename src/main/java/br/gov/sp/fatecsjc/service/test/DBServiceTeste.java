@@ -13,6 +13,7 @@ import br.gov.sp.fatecsjc.repositories.ExameRepository;
 import br.gov.sp.fatecsjc.repositories.MedicoRepository;
 import br.gov.sp.fatecsjc.repositories.PacienteRepository;
 import br.gov.sp.fatecsjc.repositories.PedidoExameRepository;
+import br.gov.sp.fatecsjc.services.PacienteService;
 
 @Service
 public class DBServiceTeste {
@@ -28,6 +29,9 @@ public class DBServiceTeste {
 
 	@Autowired
 	private PedidoExameRepository pedidoExameRepository;
+	
+	@Autowired 
+	private PacienteService pacienteService;
 
 	public void instantiateTesteDataBase() {
 
@@ -67,6 +71,7 @@ public class DBServiceTeste {
 		PedidoExame pedexa9 = new PedidoExame(null, "2018-03-16 21:02", pac7, exa2, med4);
 		PedidoExame pedexa10 = new PedidoExame(null, "2018-03-16 21:02", pac7, exa4, med4);
 		pedidoExameRepository.saveAll(Arrays.asList(pedexa1,pedexa2,pedexa3,pedexa4,pedexa5,pedexa6,pedexa7,pedexa8,pedexa9,pedexa10));
+		
 		
 		
 		
