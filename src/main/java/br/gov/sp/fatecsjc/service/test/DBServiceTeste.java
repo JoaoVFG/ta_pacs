@@ -29,9 +29,7 @@ public class DBServiceTeste {
 
 	@Autowired
 	private PedidoExameRepository pedidoExameRepository;
-	
-	@Autowired 
-	private PacienteService pacienteService;
+
 
 	public void instantiateTesteDataBase() {
 
