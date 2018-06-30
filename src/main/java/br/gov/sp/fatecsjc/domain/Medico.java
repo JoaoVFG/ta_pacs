@@ -11,7 +11,7 @@ public class Medico {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	@Column(unique = true)
 	private int crm;
@@ -23,7 +23,7 @@ public class Medico {
 		
 	}
 	
-	public Medico(int id, int crm, String nome, String especialidade, String crmEstado) {
+	public Medico(Integer id, int crm, String nome, String especialidade, String crmEstado) {
 		super();
 		this.id = id;
 		this.crm = crm;

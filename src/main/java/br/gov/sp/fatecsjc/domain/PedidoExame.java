@@ -12,7 +12,7 @@ public class PedidoExame {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private String Data;
 
@@ -33,7 +33,7 @@ public class PedidoExame {
 		
 	}
 	
-	public PedidoExame(int id, String data, Paciente paciente, Exame exame, Medico medico) {
+	public PedidoExame(Integer id, String data, Paciente paciente, Exame exame, Medico medico) {
 		super();
 		this.id = id;
 		Data = data;
@@ -42,13 +42,6 @@ public class PedidoExame {
 		this.medico = medico;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getData() {
 		return Data;

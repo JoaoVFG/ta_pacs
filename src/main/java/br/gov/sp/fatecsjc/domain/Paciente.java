@@ -10,7 +10,7 @@ public class Paciente {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private int prontuario;
 
@@ -22,7 +22,7 @@ public class Paciente {
 
 	}
 
-	public Paciente(int id, int prontuario, String nome, String dataNascimento) {
+	public Paciente(Integer id, int prontuario, String nome, String dataNascimento) {
 		super();
 		this.id = id;
 		this.prontuario = prontuario;
@@ -30,13 +30,6 @@ public class Paciente {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public int getProntuario() {
 		return prontuario;

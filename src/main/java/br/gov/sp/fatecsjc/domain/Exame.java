@@ -10,7 +10,7 @@ public class Exame {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private String nome;
 
@@ -18,19 +18,13 @@ public class Exame {
 		
 	}
 	
-	public Exame(int id, String nome) {
+	public Exame(Integer id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getNome() {
 		return nome;
