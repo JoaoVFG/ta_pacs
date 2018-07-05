@@ -53,5 +53,12 @@ public class TaPacsApplicationTests extends TestCase{
 		int id = exame.getId();
 		assertEquals(1, id);
 	}
+	
+	@Test
+	public void testErrado() {
+		int i = 1;
+		int j = 2;
+		assertEquals(i, j);
+	}
 
 }
